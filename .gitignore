@@ -1,0 +1,10 @@
+.vagrant
+app/node_modules/*
+!app/node_modules/youtube-node
+app/*.mp3
+app/*.m4v
+app/*.mp4
+app/*.flv
+app/public/*.mp3
+app/public/*.json
+*/.sass-cache

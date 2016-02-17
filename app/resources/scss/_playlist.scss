@@ -1,0 +1,33 @@
+
+#playlist {
+	margin: 15px 0;
+}
+.playlist {
+	&__song {
+		position: relative;
+		min-height: 27px;
+		padding-left: 46px;
+		margin-bottom: 10px;
+		overflow: hidden;
+
+		&__image {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -14px;
+			height: 27px;
+			width: 36px;
+		}
+		&__title {
+			padding-top: 3px;
+		}
+
+		&.active {
+			font-weight: bold;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,145 @@
+/** Note:
+ *  Any bootstrap variables, like $grid-gutter-width don't actually
+ *  Override bootstrap at all. They're just for subsequent reference.
+ **/
+body {
+  font-size: 14px;
+  color: #433;
+  font-family: verdana;
+  font-weight: normal; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  color: #E4B700;
+  font-weight: normal; }
+
+h1, .h1 {
+  font-size: 30px; }
+
+h2, .h2 {
+  font-size: 20px; }
+
+h3, .h3 {
+  font-size: 14px; }
+
+.btn {
+  background: #E4B700;
+  color: black; }
+
+/* // if using iframes
+.js-add-to-playlist {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px * 0.5 - $grid-gutter-width; // - padding
+
+	right: 0; //$grid-gutter-width * 0.5;
+	margin-right: 0;
+	font-size: 60px;
+	line-height: 1;
+	color: white;
+	text-shadow: 0 0 5px black;
+	cursor: pointer;
+	// Pad the fuck out of it because, why not? we wanna be clickin' yo
+	padding: $grid-gutter-width;
+	background: none;
+	border: none;
+	z-index: 1;
+}
+*/
+.js-add-to-playlist:hover {
+  color: #E4B700;
+  /* // meh, weird
+	&:before {
+		background: white;
+		border-radius: 50%;
+	} */ }
+
+.js-add-to-playlist {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  font-size: 60px;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 0 5px black;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1;
+  transition: color 0.1s ease-out; }
+  .js-add-to-playlist:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px; }
+
+.form-control {
+  color: #433;
+  font-size: 14px; }
+
+#results > .row {
+  position: relative;
+  overflow: hidden; }
+
+.results__video_wrapper {
+  margin-bottom: 20px; }
+  .results__video_wrapper h3 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0; }
+  .results__video_wrapper__video .embed-responsive {
+    margin-bottom: 5px;
+    overflow: hidden; }
+    .results__video_wrapper__video .embed-responsive iframe {
+      z-index: 0; }
+  .results__video_wrapper .embed-responsive {
+    background-size: cover;
+    background-position: center; }
+
+#playlist {
+  margin: 15px 0; }
+
+.playlist__song {
+  position: relative;
+  min-height: 27px;
+  padding-left: 46px;
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .playlist__song__image {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -14px;
+    height: 27px;
+    width: 36px; }
+  .playlist__song__title {
+    padding-top: 3px; }
+  .playlist__song.active {
+    font-weight: bold; }
+
+iframe {
+  width: 100%; }
+
+.btn {
+  white-space: normal;
+  display: inline-block;
+  clear: none; }
+
+.btn--full {
+  width: 100%;
+  text-align: center; }
+
+.inline-block {
+  display: inline-block; }
+
+hr {
+  clear: both;
+  border-color: #ccc; }

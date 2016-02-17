@@ -1,0 +1,28 @@
+
+#results {
+	> .row {
+		position: relative;
+		overflow: hidden;
+	}
+}
+.results__video_wrapper {
+	margin-bottom: 20px;
+	h3 {
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+	&__video {
+		.embed-responsive {
+			margin-bottom: 5px;
+			overflow: hidden;
+			iframe {
+				z-index: 0;
+			}
+		}
+	}
+	.embed-responsive {
+		background-size: cover;
+		background-position: center;
+	}
+}
